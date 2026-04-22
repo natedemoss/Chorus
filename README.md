@@ -1,6 +1,6 @@
 <div align="center">
 
-# ✻ chorus
+# chorus
 
 ### The desktop cockpit for running many Claude Code agents at once.
 
@@ -22,7 +22,7 @@
 
 ---
 
-## ✦ What is Chorus?
+## What is Chorus?
 
 **Chorus is an interface for running multiple Claude Code agents in parallel — without them stepping on each other.**
 
@@ -39,31 +39,31 @@ Each agent gets its own throwaway git worktree on its own throwaway branch, so t
 
 ---
 
-## ✦ Why you'd want this
+## Why you'd want this
 
 | Use case | What you do |
 |---|---|
-| 🎯 **Three shots at the same problem** | Same prompt × 3 agents → keep the best implementation |
-| 🧪 **A/B/C/D experiments** | Try four different approaches at once, compare results side-by-side |
-| 🚚 **Parallel chores** | Five unrelated tasks (refactor X, write tests for Y, fix bug Z…) running concurrently |
-| 🔬 **Spec exploration** | One agent writes the API, one writes tests, one writes docs — all from the same starting point |
-| 🛡️ **Risk-free experimentation** | Every agent is sandboxed in a worktree — your main branch is untouched until you promote |
+| **Three shots at the same problem** | Same prompt × 3 agents → keep the best implementation |
+| **A/B/C/D experiments** | Try four different approaches at once, compare results side-by-side |
+| **Parallel chores** | Five unrelated tasks (refactor X, write tests for Y, fix bug Z…) running concurrently |
+| **Spec exploration** | One agent writes the API, one writes tests, one writes docs — all from the same starting point |
+| **Risk-free experimentation** | Every agent is sandboxed in a worktree — your main branch is untouched until you promote |
 
 ---
 
-## ✦ Features
+## Features
 
-- 🎼 **Fan-out orchestration** — one click spawns N Claude Code subprocesses, each with their own task
-- 🌳 **Git worktree isolation** — every agent lives on its own `chorus/<runId>` branch in its own working directory
-- 📡 **Live streaming UI** — `claude -p --output-format stream-json` parsed into a per-agent timeline of thinking, tool calls, and file edits
-- 🏆 **One-click promote** — merges the winner back into base with `--no-ff`, branch preserved for history
-- 🗑️ **One-click discard** — force-removes the worktree and deletes the branch
-- 🛑 **Graceful stop** — SIGTERM lets `claude` flush a final result before exiting (per-agent or all at once)
-- ⌨️ **Keyboard-first** — `Cmd/Ctrl + Enter` to fan out, `Cmd/Ctrl + K` for the command palette
+- **Fan-out orchestration** — one click spawns N Claude Code subprocesses, each with their own task
+- **Git worktree isolation** — every agent lives on its own `chorus/<runId>` branch in its own working directory
+- **Live streaming UI** — `claude -p --output-format stream-json` parsed into a per-agent timeline of thinking, tool calls, and file edits
+- **One-click promote** — merges the winner back into base with `--no-ff`, branch preserved for history
+- **One-click discard** — force-removes the worktree and deletes the branch
+- **Graceful stop** — SIGTERM lets `claude` flush a final result before exiting (per-agent or all at once)
+- **Keyboard-first** — `Cmd/Ctrl + Enter` to fan out, `Cmd/Ctrl + K` for the command palette
 
 ---
 
-## ✦ Quickstart
+## Quickstart
 
 ```bash
 git clone https://github.com/natedemoss/Chorus.git
@@ -76,15 +76,15 @@ npm run dev
 
 | | |
 |---|---|
-| 🟢 Node | `>= 20` |
-| 🟠 Claude Code | `claude` on your `PATH` — [install guide](https://docs.claude.com/en/docs/claude-code) |
-| 🌳 Git | A repository you'd like the agents to work in |
+| Node | `>= 20` |
+| Claude Code | `claude` on your `PATH` — [install guide](https://docs.claude.com/en/docs/claude-code) |
+| Git | A repository you'd like the agents to work in |
 
 Then: pick the repo, write a distinct task in each of the N textareas, and hit **Fan out →** (or `Cmd/Ctrl + Enter`).
 
 ---
 
-## ✦ How it works
+## How it works
 
 ```
 ┌──────────────────────────────────────────────────────────┐
@@ -110,7 +110,7 @@ Each agent runs with `--dangerously-skip-permissions` so it has the full tool su
 
 ---
 
-## ✦ Keyboard shortcuts
+## Keyboard shortcuts
 
 | Shortcut | Action |
 |---|---|
@@ -120,7 +120,7 @@ Each agent runs with `--dangerously-skip-permissions` so it has the full tool su
 
 ---
 
-## ✦ Project layout
+## Project layout
 
 ```
 src/
@@ -139,7 +139,7 @@ src/
 
 ---
 
-## ✦ Status
+## Status
 
 **Alpha.** It works on my Windows 11 machine, runs `claude` subprocesses without mangling prompts, streams their output cleanly, and has survived several dozen real fanouts.
 
@@ -147,7 +147,7 @@ Use it. Break it. [Open an issue](https://github.com/natedemoss/Chorus/issues) a
 
 ---
 
-## ✦ License
+## License
 
 MIT — see [LICENSE](./LICENSE).
 
