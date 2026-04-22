@@ -1,0 +1,6 @@
+node_modules
+dist-main
+dist-renderer
+.DS_Store
+*.log
+.chorus-state
